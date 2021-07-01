@@ -7,7 +7,6 @@ END = 20180201050000000
 graph_reuse = 0
 NESTED_OTQS_USE_ONLY_SINKS_FOR_OUTPUT = TRUE
 one_to_many_symbol_mapping = 0
-PARAMETER = DB ROKOS_VIEW_DEMO
 QUERY = 
 QUERY_ALIAS = Chain_1
 QUERY_BATCH_SIZE = 0
@@ -17,6 +16,7 @@ SHOW_TEMPLATE =
 START = 20070201040000000
 TICK_TYPE = TRD
 TYPE = CHAIN
+TZ = America/New_York
 
 [Graph_1]
 COMMENT = 
@@ -563,11 +563,13 @@ SECURITY = eval("THIS::symbols","PATTERN=$PTRN") 0
 SHOW_TEMPLATE = 
 START = 20080201040000000
 TYPE = GRAPH
+TZ = America/New_York
 
 [Graph_2]
 COMMENT = 
 CPU_NUMBER = 1
 DB_HINT_FOR_PROCESSING_HOST = 
+END = 20180201050000000
 graph_reuse = 0
 NESTED_OTQS_USE_ONLY_SINKS_FOR_OUTPUT = TRUE
 NODE_1 = REGEX_MATCHES(DISCARD_ON_MATCH=true,FIELD=COND,PATTERN="\\w*?6\\w*?")
@@ -855,17 +857,34 @@ ROOT_X = 1118.205
 ROOT_Y = 12342.333
 SECURITY = DEMO_L1::A 0
 SHOW_TEMPLATE = 
+START = 20030201040000000
 TYPE = GRAPH
+TZ = America/New_York
+
+[Chain_2]
+COMMENT = 
+CPU_NUMBER = 1
+DB_HINT_FOR_PROCESSING_HOST = 
+graph_reuse = 0
+NESTED_OTQS_USE_ONLY_SINKS_FOR_OUTPUT = TRUE
+one_to_many_symbol_mapping = 0
+QUERY = 
+QUERY_ALIAS = Chain_2
+QUERY_BATCH_SIZE = 0
+QUERY_ENTRY_FLAG = 
+SHOW_TEMPLATE = 
+TICK_TYPE = TRD
+TYPE = CHAIN
 
 [_meta]
-app_version = QueryDesigner Build timestamp: 20210628200818
+app_version = QueryDesigner Build timestamp: 20210630200540
 ApplyTimesDaily = 0
-end = 20180201050000000
+end = UT1517446800.0.0
 execute_based_on_query_structure = 1
 file_version = 2.0
 RunningQuery = 0
-start = 20030201040000000
+start = UT1170288000.0.0
 SYMBOL_DATE = 
-TZ = America/New_York
+TZ = 
 USER_NAME = build
-version_history = START 2.0 END 2.0
+version_history = TZ 2.0 START 2.0 END 2.0
