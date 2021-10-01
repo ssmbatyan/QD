@@ -3921,11 +3921,12 @@ SHOW_TEMPLATE =
 TYPE = GRAPH
 
 [_meta]
-app_version = QueryDesigner Build timestamp: 20210528120000
+app_version = QueryDesigner Build timestamp: 20210930200608
 ApplyTimesDaily = 0
 end = 20210605000000000
 execute_based_on_query_structure = 1
 file_version = 2.0
+QUERY_GROUP = New_Folder_1 mktdata_book dataquality read_order_snapshot
 RunningQuery = 0
 start = 20210604000000000
 SYMBOL_DATE = 
