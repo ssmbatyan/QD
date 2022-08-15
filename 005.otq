@@ -18,7 +18,7 @@ TICK_TYPE = TRD
 TYPE = CHAIN
 TZ = America/New_York
 
-[Graph_1]
+[Graph_1111]
 COMMENT = 
 CPU_NUMBER = 16
 DB_HINT_FOR_PROCESSING_HOST = 
